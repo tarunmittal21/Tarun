@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mysettings"  android:title="My settings" />
+    <item android:id="@+id/myactivity"  android:title="My activity" />
+    <item android:id="@+id/mydocuments"  android:title="My documents" />
+    <item android:id="@+id/recent"  android:title="Recent" />
+    <item android:id="@+id/myrecommendations"  android:title="My recommmendations" />
+    <item android:id="@+id/offerspromotions"  android:title=" Offers/Promotions" />
+    <item android:id="@+id/customerservice"  android:title="Customer Service" />
+    <item android:id="@+id/rateourapp"  android:title="Rate our app" />
+    <item android:id="@+id/legalandabout"  android:title="Legal and About" />
+    <item android:id="@+id/signout"  android:title="Sign out" />
+</menu>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_consumer_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perraulthealth.perraulthealth.ConsumerHomeActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_action_sidebar"
+        android:id="@+id/imageViewSidebar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/filter"
+        android:id="@+id/imageViewFilter"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="Filter"
+        />
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageViewMap"
+        app:srcCompat="@drawable/ic_action_map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewFilter"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewBucket"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/bucket"
+        android:id="@+id/imageViewBucket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewMap"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewHealthcard"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp" />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/healthcard"
+        android:id="@+id/imageViewHealthcard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewBucket"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/searchViewHealthcare"
+        tools:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSidebar"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewDoctor"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+     />
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/doctor"
+        android:id="@+id/imageViewDoctor"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewPharmacy"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/pharmacy"
+        android:id="@+id/imageViewPharmacy"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewLab"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/lab"
+        android:id="@+id/imageViewLab"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewPharmacy"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewHospital"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/hospital"
+        android:id="@+id/imageViewHospital"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewLab"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewHomecare"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/homecare"
+        android:id="@+id/imageViewHomecare"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewHospital"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewHealthbook"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/healthbook"
+        android:id="@+id/imageViewHealthbook"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewHomecare"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/searchViewHealthcare"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <fragment
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDoctor"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewPrescription"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/prescription"
+        android:id="@+id/imageViewPrescription"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewBody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/body"
+        android:id="@+id/imageViewBody"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewPrescription"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewConnectnow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/connectnow"
+        android:id="@+id/imageViewConnectnow"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewBody"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewCloud"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/cloud"
+        android:id="@+id/imageViewCloud"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewConnectnow"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewNetwork"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/network"
+        android:id="@+id/imageViewNetwork"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewCloud"
+        app:layout_constraintRight_toLeftOf="@+id/imageViewAlert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/alert"
+        android:id="@+id/imageViewAlert"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewNetwork"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

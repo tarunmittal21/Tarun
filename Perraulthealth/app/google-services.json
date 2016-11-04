@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "482650469659",
+    "firebase_url": "https://perraulthealth-cfc33.firebaseio.com",
+    "project_id": "perraulthealth-cfc33",
+    "storage_bucket": "perraulthealth-cfc33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482650469659:android:a06b6140add522ab",
+        "android_client_info": {
+          "package_name": "com.perraulthealth.perraulthealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482650469659-ai08dcafk627j0i2ik6om8q7cuq0bmlj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.perraulthealth.perraulthealth",
+            "certificate_hash": "FB4DE2C93CA116D9D3B6CF4DEED7553A22D1073C"
+          }
+        },
+        {
+          "client_id": "482650469659-qa8f44bb0agehddujmfonvm0iupnr3b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl63LBjoHLW0nNmdLNfd5EI3D9A6zL5R0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482650469659-qa8f44bb0agehddujmfonvm0iupnr3b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
